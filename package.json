@@ -1,0 +1,27 @@
+{
+    "name": "@gladeye/af",
+    "version": "1.0.0",
+    "main": "dist/af.cjs.js",
+    "module": "dist/af.esm.js",
+    "browser": "dist/af.umd.js",
+    "description": "Animation Frame class & instance with read and write cycles to maximise performance",
+    "devDependencies": {
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-preset-env": "^1.6.0",
+        "rollup": "^0.65.0",
+        "rollup-plugin-babel": "^2.7.1",
+        "rollup-plugin-commonjs": "^9.1.0",
+        "rollup-plugin-node-resolve": "^3.0.0"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "node test/test.js",
+        "pretest": "npm run build"
+    },
+    "files": [
+        "dist"
+    ],
+    "author": "William Hamlin <william@gladeye.com>",
+    "license": "MIT"
+}

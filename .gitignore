@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# rollup output folder
+/dist
+
+# DS_Store
+.DS_Store
