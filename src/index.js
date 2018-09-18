@@ -13,7 +13,7 @@ class AF {
     _read = [];
     _write = [];
 
-    constructor(enforcer, singletonEnforcer) {
+    constructor() {
         this._animate = this._animate.bind(this);
         if (typeof window !== 'undefined') this.start();
     }
