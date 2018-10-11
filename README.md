@@ -4,11 +4,15 @@ Simple animation frame class with read and write cycles to seperate out logic an
 
 Reads will run before Writes.
 
+## Installation
+
+npm install @gladeye/af
+
 ## Use
 
 As a singleton. This should be the main way this is used.
 ```js
-import { af } from 'AF'; // lowercase af
+import { af } from '@gladeye/af'; // lowercase af
 
 let count = 0;
 
@@ -16,23 +20,24 @@ function update(){
     count ++;
 }
 
-af.addRead( update );
+const animFram = af();
 
-af.removeRead( update );
+animFram.addRead( update );
+
+animFramf.removeRead( update );
+
 ```
 
 Or you may extend the class.
 
 
 ```js
-import { AF } from 'AF'; // uppercase AF
+import { AF } from '@gladeye/af'; // uppercase AF
 
-class NewAF extends AF{
+class ewAF extends AF{
 
 }
 ```
-
-
 
 ## Methods
 
