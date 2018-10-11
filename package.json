@@ -1,6 +1,10 @@
 {
     "name": "@gladeye/af",
-    "version": "1.0.3",
+    "version": "1.0.4",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/gladeye/af"
+    },
     "main": "dist/af.cjs.js",
     "module": "dist/af.esm.js",
     "browser": "dist/af.umd.js",
